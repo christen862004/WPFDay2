@@ -55,7 +55,7 @@ namespace WPFDay2
         {
             BrushWindow win = new BrushWindow();
             win.Show();
-            
+            //-----------------
         }
     }
 }
