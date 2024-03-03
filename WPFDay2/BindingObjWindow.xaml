@@ -1,0 +1,41 @@
+﻿<Window x:Class="WPFDay2.BindingObjWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xyz="clr-namespace:WPFDay2"
+        Title="BindingObjWindow" Height="450" Width="800" 
+        Background="{x:Static SystemColors.ActiveBorderBrush}">
+    <StackPanel Name="EmpPanel" 
+                DataContext="{Binding ElementName=cboxEmpList,Path=SelectedItem}">
+
+        <ComboBox Name="cboxEmpList" 
+                  ItemsSource="{x:Static xyz:EmployeeSampleData.Emps}"
+                  FontSize="50" Margin="20" >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Path=Id}"></TextBlock>
+                        <TextBlock Margin="20 0" Text="{Binding Path=Name}"></TextBlock>
+
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+        <Label>Enter Index</Label>
+        <TextBox Margin="20" FontSize="20" Name="txtIndex"></TextBox>
+
+        <TextBox Margin="20" FontSize="20"  
+                 Name="txtID" 
+                 Text="{Binding Path=Id,Mode=TwoWay}"></TextBox>
+        <TextBox Margin="20" FontSize="20"  
+                 Name="txtName"  
+                 Text="{Binding Path=Name,Mode=TwoWay}"></TextBox>
+        <TextBox Margin="20" FontSize="20" Name="txtAddress"
+                 Text="{Binding Path=Address,Mode=TwoWay}"
+                 ></TextBox>
+        <TextBox Margin="20" FontSize="20" Name="txtAge"
+                 Text="{Binding Path=Age,Mode=TwoWay}"
+                 ></TextBox>
+        <Button Click="Button_Click" FontSize="50" Margin="20" >Get Data</Button>
+    </StackPanel>
+</Window>

@@ -57,5 +57,35 @@ namespace WPFDay2
             win.Show();
             //-----------------
         }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            BindingWindow win = new BindingWindow();
+            win.Show();
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            BindingObjWindow win = new BindingObjWindow();
+            win.Show();
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            TransformWindow win=new TransformWindow();
+            win.Show();
+        }
+
+        private void Button_Click_9(object sender, RoutedEventArgs e)
+        {
+            AnimationStoryWindow win = new AnimationStoryWindow();
+            win.Show();
+        }
+
+        private void Button_Click_10(object sender, RoutedEventArgs e)
+        {
+            FinalWindow win = new FinalWindow();
+            win.Show();
+        }
     }
 }

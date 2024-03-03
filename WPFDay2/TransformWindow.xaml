@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPFDay2.TransformWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TransformWindow" Height="450" Width="800">
+    <Canvas>
+        <Rectangle Width="100" Height="100" 
+                   Stroke="Blue"
+                   StrokeThickness="10"
+                   Fill="LightBlue"
+                   Canvas.Top="100"
+                   Canvas.Left="100"
+                   MouseEnter="Rectangle_MouseEnter"
+                   Name="rect1"
+                   ></Rectangle>
+        <!--<Rectangle Width="100" Height="100" 
+            Stroke="Pink"
+            StrokeThickness="10"
+            Fill="LightPink"
+            Canvas.Top="100"
+            Canvas.Left="100"
+            RenderTransformOrigin="0,0">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <TranslateTransform X="50" Y="50"></TranslateTransform>
+                    <RotateTransform Angle="45"  ></RotateTransform>
+                    <ScaleTransform ScaleX=".75" ScaleY=".5" ></ScaleTransform>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+            
+        </Rectangle>-->
+    </Canvas>
+</Window>

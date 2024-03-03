@@ -15,6 +15,12 @@
 
         <Button Margin="10" Click="Button_Click_5">BrushWindow</Button>
 
-        <Button Margin="10"></Button>
+        <Button Margin="10" Click="Button_Click_6">BindingWindow</Button>
+        <Button Margin="10" Click="Button_Click_7">BindingObjWindow</Button>
+        <Button Margin="10" Click="Button_Click_8" >Transform</Button>
+        <Button Margin="10"  Click="Button_Click_9">AnimationStoryWindow</Button>
+
+
+        <Button Margin="10" Click="Button_Click_10">FinalWindow</Button>
     </StackPanel>
 </Window>
